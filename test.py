@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 import unittest
 import src.cotizador as cot
+import xmlrunner
 
 class Test(unittest.TestCase):
 	#Incluya una pequeña descripción de lo que se prueba.
@@ -84,4 +85,4 @@ class Test(unittest.TestCase):
 
 
 if __name__ == '__main__':
-	unittest.main()
+	unittest.main(testRunner=xmlrunner.XMLTestRunner(output='test-reports'))
